@@ -1,0 +1,40 @@
+.form{
+  position: relative;
+}
+
+.cityList.active{
+  height: 200px;
+  border: 1px solid #ededed;
+  overflow: auto;
+}
+
+.cityList{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: height .5s ease;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+}
+
+.cityList__item{
+  padding: 0 20px;
+  height: 50px;
+  border-bottom: 1px solid #ededed;
+  list-style-type: none;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.cityList__item:hover{
+  background: #ededed;
+}
+
+.cityList__item:last-child{
+  border-bottom: none;
+}
